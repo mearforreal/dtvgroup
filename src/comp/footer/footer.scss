@@ -1,0 +1,28 @@
+.footer__wrapper {
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: white;
+  height: 166px;
+  width: 100%;
+  background-color: black;
+  padding: 25px 0 30px 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.first_part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

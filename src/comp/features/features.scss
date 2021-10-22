@@ -1,0 +1,135 @@
+@import "../../variables.scss";
+
+.feature__wrapper {
+  height: 750px;
+  background-color: white;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.feature__title_wrapper {
+  background-color: #e0ce04;
+  height: 80px;
+  width: 576px;
+  margin: 0 auto 10px;
+  p {
+    color: $title-purple;
+    font-size: 60px;
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.feature__subtitle {
+  color: #d11d1d;
+  font-size: 48px;
+  font-family: $font-type-bebas;
+  text-align: center;
+}
+
+// l
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hexGrid {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.hexGridA,
+.hexGridB {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+}
+
+.hexGridC {
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+
+  .hex {
+    margin-left: 118px;
+  }
+}
+
+.hexGridB {
+  transform: translateX(calc(100% / 6));
+  margin: calc(-9.62% + 2px) auto; /* 100%*cos(30)/9 */
+}
+
+.hex {
+  display: flex;
+  margin: 5px;
+  //   width: calc(100% * 2 / 3 - 2px);
+
+  &.yellow {
+    background-color: #e0ce04;
+  }
+  &.orange {
+    background-color: #dba428;
+  }
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  &.large {
+    width: 220px;
+    height: 190px;
+  }
+  &.medium {
+    width: 128px;
+    height: 111px;
+  }
+  &.small {
+    width: 70px;
+    height: 62px;
+  }
+  &.medium_bottom {
+    width: 110px;
+    height: 95px;
+  }
+}
+
+.hex::before {
+  content: "";
+  padding-top: 86.6%; /* 100%*cos(30) */
+}
+
+.hexTopMedium__wrapper {
+  margin-top: auto;
+  margin-left: 70px;
+}
+
+.hexBottomMedium_wrapper {
+  margin-left: 26px;
+  position: relative;
+  .small {
+    position: absolute;
+    top: 64px;
+    left: 100px;
+  }
+}
+
+.hex__container {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  font-family: Montserrat;
+
+  .first_line {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .text {
+    width: 165px;
+    text-align: center;
+    font-weight: 500;
+  }
+}

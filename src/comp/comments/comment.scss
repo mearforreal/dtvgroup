@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+.comments__title {
+  color: #303964;
+  text-align: center;
+  font-family: $font-type-bebas;
+  font-size: 48px;
+}
+
+.comments__wrapper {
+  margin-top: 60px;
+}
+
+.comments_conatiner {
+  padding-left: 180px;
+}
+
+.comment__section {
+  display: flex;
+  margin-top: 77px;
+  font-family: "Montserrat";
+  p {
+    word-break: break-word;
+  }
+  .avatar {
+    width: 147px;
+    height: 147px;
+    margin-right: 25px;
+  }
+  .short_review {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  .comment_description {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
+  .person_info {
+    font-weight: bold;
+  }
+
+  .comment_text_container {
+    max-width: 745px;
+  }
+}

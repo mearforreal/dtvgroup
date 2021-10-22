@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: $full-width;
+  margin: 0 auto;
+  z-index: -2;
+}
+
+.main__container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+.danger__background {
+  background-color: $danger-color;
+  color: white;
+}
+
+.warning__background {
+  background-color: $warning-color;
+  color: black;
+}
+
+.success__background {
+  background-color: $success-color;
+  color: white;
+}

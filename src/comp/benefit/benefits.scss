@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+.benefits_section_wrapper {
+  height: 380px;
+  width: 100%;
+  background-color: #f7ebd0;
+  position: relative;
+  p {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $title-purple;
+    font-size: 48px;
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.box__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.box__container {
+  margin-top: 85px;
+}

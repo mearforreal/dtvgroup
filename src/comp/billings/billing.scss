@@ -1,0 +1,80 @@
+@import "../../variables.scss";
+.product__header {
+  font-size: 48px;
+  font-family: "Bebas Neue";
+  margin-bottom: 70px;
+}
+
+.product__description {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.buy_with_discount {
+  background-color: #e0ce04;
+  width: 371px;
+  height: 82px;
+  border-radius: 10px;
+  p {
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    /* text-align: center; */
+    display: grid;
+    /* vertical-align: middle; */
+    place-items: center;
+    height: 100%;
+
+    position: absolute;
+  }
+}
+
+.product_characteristic {
+  display: flex;
+  margin-top: 80px;
+}
+
+.delivery__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  .delivery__title {
+    color: $danger-color;
+    font-family: $font-type-bebas;
+    font-size: 48px;
+  }
+  .redline {
+    height: 1px;
+    width: 370px;
+    border-style: solid;
+    color: $danger-color;
+  }
+}
+
+.bills_container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.delivery_cards__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  .delivery_cards_box {
+    padding: 70px 15px 25px;
+    width: 370px;
+    height: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    p {
+      font-family: "Montserrat";
+      font-size: 18px;
+      width: 259px;
+      margin-left: 10px;
+    }
+  }
+}
